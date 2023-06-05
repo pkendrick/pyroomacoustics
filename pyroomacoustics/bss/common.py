@@ -70,7 +70,7 @@ def projection_back(Y, ref, clip_up=None, clip_down=None):
     num = np.sum(np.conj(ref[:, :, None]) * Y, axis=0)
     denom = np.sum(np.abs(Y) ** 2, axis=0)
 
-    c = np.ones(num.shape, dtype=np.complex)
+    c = np.ones(num.shape, dtype=complex)
     I = denom > 0.0
     c[I] = num[I] / denom[I]
 

@@ -130,7 +130,7 @@ def griffin_lim(
         Dictionary of extra parameters for the STFT
     n_iter: int, optional
         The number of iteration
-    ini: str or array_like, np.complex, shape (n_frames, n_freq), optional
+    ini: str or array_like, complex, shape (n_frames, n_freq), optional
         The initial value of the phase estimate. If "random", uses a random guess. If ``None``, uses ``0`` phase.
     callback: func, optional
         A callable taking as argument an int and the reconstructed STFT and time-domain signals
